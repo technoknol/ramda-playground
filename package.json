@@ -1,0 +1,20 @@
+{
+  "name": "ramda-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite-node index.js --watch",
+    "start": "vite-node index.js"
+  },
+  "author": "technoknol",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.28.0",
+    "ramda-fantasy": "^0.8.0"
+  },
+  "devDependencies": {
+    "vite-node": "^0.28.3"
+  }
+}
