@@ -11,7 +11,6 @@ console.clear();
 
 // maybe :: b -> (a -> b) -> Maybe a -> b
 const maybe = curry((v, f, m) => {
-  console.log('m',{m, v , f} )
   if (m.isNothing) {
     return v;
   }
