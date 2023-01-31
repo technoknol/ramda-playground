@@ -1,9 +1,9 @@
 const moment = require('moment');
-
-import { Either, Left, prop,  startLog, endLog } from 'lib'
+import { Either, Left, prop,  Log } from 'lib'
 import { curry } from 'ramda';
 
-startLog('either')
+const log = Log.of('either')
+log.start();
 
 const left = x => new Left(x);
 
@@ -34,5 +34,4 @@ console.log(validAge);
 const inValidAge = getAge(moment(), { birthDate: 'July 4 21'});
 console.log(inValidAge);
 
-
-endLog('either')
+log.end();

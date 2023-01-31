@@ -3,9 +3,12 @@ import M from 'ramda-fantasy';
 const Maybe = M.Maybe
 const Just = Maybe.Just;
 const Nothing = Maybe.Nothing;
-import { startLog, endLog } from 'lib'
+import { Log } from 'lib'
 
-startLog('maybe')
+
+const log = Log.of('maybe')
+log.start();
+
 // withdraw :: Number -> Account -> Maybe(Account)
 // const withdraw = curry((amount, { balance }) =>
 //   Maybe.of(balance >= amount ? { balance: balance - amount } : Nothing()));
@@ -52,4 +55,4 @@ const t2 = getTwenty2({ balance: 0 }); // "You're broke!"
 
 console.log({ t2 })
 
-endLog('maybe')
+log.end();
